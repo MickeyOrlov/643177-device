@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Каталог товаров</title>
+		<link href="normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -19,12 +21,12 @@
 					</p>
 				</form>
 					<ul class="user-menu">
-						<li class="user-menu-login"><a href="#">Войти</a></li>
-						<li class="user-menu-compare"><a href="#">Сравнить</a></li>
-						<li class="user-menu-card"><a href="#">Корзина</a></li>
-					</ul>
-					<ul class="site-navigation">
-						<li><a href="#">Каталог товаров</a>
+					<li class="user-menu-login"><a href="#">Войти</a></li>
+					<li class="user-menu-compare"><a href="#">Сравнить</a></li>
+					<li class="user-menu-card"><a href="#">Корзина</a></li>
+				</ul>
+				<ul class="site-navigation">
+						<li class="site-navigation-item"><a href="#">Каталог товаров</a>
 							<ul class="submenu">
 								<li><a href="#">Виртуальная реальность</a></li>
 								<li><a href="#">Моноподы для селфи</a></li>
@@ -34,9 +36,9 @@
 								<li><a href="#">Квадрокоптеры</a></li>
 							</ul>
 						</li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Гарантия</a></li>
-							<li><a href="#">Контакты</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 			</nav>
 		</header>
@@ -52,12 +54,12 @@
 					<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
 						<h3 class="filters-title">Фильтр:</h3>
 						<fieldset>
-							<legend>Стоимость</legend>
+							<legend class="filter-range">Стоимость</legend>
 							<input type="range" min="1" max="5" value="3">
 						</fieldset>
 						<fieldset>
 							<legend>Цвет</legend>
-							<ul>
+							<ul class="filter-color">
 								<li class="filter-option">
 									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color" id="filter-color-black" checked>
 									<label for="filter-color-black">Черный</label>
@@ -82,7 +84,7 @@
 						</fieldset>
 						<fieldset>
 							<legend>Bluetooth</legend>
-							<ul>
+							<ul class="filter-radio">
 								<li class="filter-option">
 									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="Bluetooth" id="boolean-true" value="true" checked>
 									<label for="boolean-true">Есть</label>
@@ -99,11 +101,11 @@
 				<section class="catalog-sort">
 					<h2 class="visually-hidden">Сортировка товара</h2>
 					<h3 class="filters-title">Сортировка:</h3>
-					<ul class="catalog-list">
-						<li class="catalog-item catalog-item-price"><a href="#">По цене</a></li>
-						<li class="catalog-item catalog-item-type"><a href="#">По типу</a></li>
-						<li class="catalog-item catalog-item-popularity"><a href="#">По популярности</a></li>
-						<li class="catalog-item catalog-item-arrow">
+					<ul class="catalog-sort-list">
+						<li class="catalog-sort-item catalog-item-price"><a href="#">По цене</a></li>
+						<li class="catalog-sort-item catalog-item-type"><a href="#">По типу</a></li>
+						<li class="catalog-sort-item catalog-item-popularity"><a href="#">По популярности</a></li>
+						<li class="catalog-sort-item catalog-item-arrow">
 							<a href="#">
 								<img src="img/icon-up-dir.svg" width="11" height="10" alt="Упорядочить по возрастанию">
 							</a>
@@ -125,7 +127,7 @@
 								</p>
 							<h3>Любительская селфи-палка</h3>
 						</a>
-							<p>500.</p>
+							<p class="catalog-item-text">500.</p>
 							<p class="catalog-item-hover">
 								<a class="hover-card" href="#">В корзину</a>
 								<a class="hover-comparison" href="#">Добавить к сравнению</a>
@@ -138,7 +140,7 @@
 								</p>
 							<h3>Профессиональная селфи-палка</h3>
 							</a>
-							<p>1 500.</p>
+							<p class="catalog-item-text">1 500.</p>
 							<p class="catalog-item-hover">
 								<a class="hover-card" href="#">В корзину</a>
 								<a class="hover-comparison" href="#">Добавить к сравнению</a>
@@ -151,7 +153,7 @@
 								</p>
 							<h3>Непотопляемая селфи-палка</h3>
 							</a>
-							<p>2 500 руб.</p>
+							<p class="catalog-item-text">2 500 руб.</p>
 							<p class="catalog-item-hover">
 								<a class="hover-card" href="#">В корзину</a>
 								<a class="hover-comparison" href="#">Добавить к сравнению</a>
@@ -164,7 +166,7 @@
 								</p>
 								<h3>Селфи-палка 'Следуй за мной'</h3>
 							</a>
-							<p>4 900 руб.</p>
+							<p class="catalog-item-text">4 900 руб.</p>
 							<p class="catalog-item-hover">
 								<a class="hover-card" href="#">В корзину</a>
 								<a class="hover-comparison" href="#">Добавить к сравнению</a>
@@ -175,7 +177,7 @@
 						<li class="pagination-prev">
 							<span>Назад</span>
 						</li>
-						<li class="pagination-item pagination-item-current">
+						<li class=" pagination-item-current">
 							<span>1</span>
 						</li>
 						<li class="pagination-item">
@@ -193,14 +195,14 @@
 		<footer class="main-footer">
 			<nav class="footer-navigation">
 				<a class="footer-title" href="index.html">
-					<img src="img/logo.svg" alt="Логотип Девайс" width="166" height="53">
+					<img src="img/logo-footer.svg" alt="Логотип Девайс" width="166" height="53">
 				</a>
-				<ul class="user-menu">
-					<li class="user-menu_login"><a href="#">Войти</a></li>
-					<li class="user-menu_compare"><a href="#">Сравнить</a></li>
-					<li class="user-menu_card"><a href="#">Корзина</a></li>
+				<ul class="user-menu-footer">
+					<li class="user-menu-login"><a href="#">Войти</a></li>
+					<li class="user-menu-compare"><a href="#">Сравнить</a></li>
+					<li class="user-menu-cart"><a href="#">Корзина</a></li>
 				</ul>
-				<ul class="site-navigation">
+				<ul class="site-navigation-footer">
 					<li>г. Москва, ул. Строителей, 15</li>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Гарантия</a></li>
@@ -210,20 +212,23 @@
 				<ul class="social-list">
 					<li class="li social-item">
 						<a href="#">
-							<img src="img/fb.svg" width="32" height="32" alt="Мы в Фейсбуке">
+							<img src="img/fb.svg" alt="Мы в Фейсбуке">
 						</a>
 					</li>
 					<li class="li social-item">
 						<a href="#">
-							<img src="img/instagram.svg" width="32" height="32" alt="Мы в Инстаграме">
+							<img src="img/instagram.svg" alt="Мы в Инстаграме">
 						</a>
 					</li>
 					<li class="li social-item">
 						<a href="#">
-							<img src="img/twitter.svg" width="32" height="32" alt="Мы в Твиттере">
+							<img src="img/twitter.svg" alt="Мы в Твиттере">
 						</a>
 					</li>
 				</ul>
+				<p class="copyright">
+					<span class="icon">HTMLAcademy</span>
+				</p>
 			</nav>
 		</footer>
 	</body>

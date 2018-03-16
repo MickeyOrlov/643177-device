@@ -1,0 +1,433 @@
+/* font-family: "OpenSans"; */
+@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/Opensans.woff") format("woff"),
+	url("../fonts/Opensans.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 400;
+}
+/* font-family: "Opensanslight"; */
+@font-face {
+	font-family: "Opensanslight";
+	src: url("../fonts/Opensanslight.woff") format("woff"),
+	url("../fonts/Opensanslight.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 300;
+}
+/* font-family: "Gilroylight"; */
+@font-face {
+	font-family: "Gilroylight";
+	src: url("../fonts/Gilroylight.woff") format("woff"),
+	url("../fonts/Gilroylight.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 300;
+}
+/* font-family: "Gilroyextrabold"; */
+@font-face {
+	font-family: "Gilroyextrabold";
+	src: url("../fonts/Gilroyextrabold.woff") format("woff"),
+	url("../fonts/Gilroyextrabold.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 700;
+}
+/*------------------------------------------------------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Opensanslight", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;	
+}
+a {
+	text-decoration: none;
+}
+.visually-hidden {
+	display: none;
+}
+/*
+.button {
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 3.75px;
+	text-transform: uppercase;
+	color: #000;
+	position: relative;
+}
+.button::before {
+	content: "";
+	display: block;
+	width: 220px;
+	height: 8px;
+	background: #f0c52e;
+	position: absolute;
+	
+}
+.button .button-line {
+	z-index: 10;
+	position: relative;
+	top: -10px;
+	left: 42px;
+}
+.button:hover::before {
+	top: 0;
+	height: 40px;
+	background: #f0c52e;
+}
+.button:hover::after {
+	top: 0;
+	height: 40px;
+	background: #f0c52e;
+}
+.button:active {
+	opacity: 0.4;
+}
+.subtitle {
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+*/
+/*----------------------------HEADER----------------------------------*/
+.main-navigation {
+	background-color: #f7e296;
+}
+.search-form, .user-menu {
+	font-size: 15px;
+	line-height: 30px;
+}
+.user-menu, .site-navigation, .site-navigation .submenu {
+	list-style-type: none;
+}
+.search-form .search-form-item {
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
+}
+.user-menu .user-menu-login::before {
+	content: url(../img/user.svg);
+}
+.user-menu .user-menu-compare::before {
+	content: url(../img/compare.svg);
+}
+.user-menu .user-menu-card::before {
+	content: url(../img/cart.svg);
+}
+.site-navigation {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	text-transform: uppercase;
+}
+.site-navigation-item .submenu {
+	font-family: "Opensanslight", Arial, sans-serif;
+	text-transform: none;
+	font-size: 15px;
+	line-height: 36px;
+}
+.site-navigation-item::after {
+	content: url(../img/plus.svg);
+}
+.site-navigation a, .user-menu a {
+	color: #000;
+}
+.main-title:hover,
+.user-menu-login:hover,
+.user-menu-compare:hover,
+.user-menu-card:hover,
+.site-navigation a:hover {
+	opacity: 0.6;
+}
+.main-title:active,
+.user-menu-login:active,
+.user-menu-compare:active,
+.user-menu-card:active,
+.site-navigation a:active {
+	opacity: 0.3;
+}
+.search-form-button {
+	
+}
+/*----------------------------HEADER----------------------------------*/
+
+/*----------------------------slider----------------------------------*/
+.slider-input {
+	content: url(../img/slider-button.svg);
+	height: 12px;
+	width: 12px;
+}
+.slider-input:checked {
+	content: url(../img/slider-button-empty.svg);
+}
+.slider-page .slider-subtitle {
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 56px;
+}
+.table .table-list:nth-child(1)  {
+	font-family: "Gilroylight", Arial, sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+
+}
+.table .table-list:nth-child(2)  {
+	font-family: "Opensanslight", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+}
+/*----------------------------slider----------------------------------*/
+
+/*----------------------------popular----------------------------------*/
+.popular-list {
+	list-style-type: none;
+}
+.popular-item-link {
+	color: #000;
+}
+.popular-item h3{
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	font-size: 18px;
+}
+.popular-item-image {
+background: #f7e296;	
+}
+.popular-item-image:hover {
+	background: #f0c52e;
+}
+.popular-item-image:active {
+	background: #f0c52e;
+	opacity: 0.8;
+}
+/*----------------------------popular----------------------------------*/
+
+/*----------------------------services----------------------------------*/
+.services {
+	background: #e5e5e5;
+}
+.services-delivery-logo {
+	content: url(../img/delivery.svg);
+}
+.services-guarantee-logo {
+	content: url(../img/warranty.svg);
+}
+.services-critic-logo {
+	content: url(../img/credit.svg);
+}
+/*----------------------------services----------------------------------*/
+
+/*----------------------------logotypes----------------------------------*/
+.logotypes-list {
+	list-style-type: none;
+}
+.ligotypes-item:nth-child(1):hover {
+	content: url(../img/logo-1-1.jpg);
+}
+.ligotypes-item:nth-child(2):hover {
+	content: url(../img/logo-2-2.jpg);
+}
+.ligotypes-item:nth-child(3):hover {
+	content: url(../img/logo-3-3.jpg);
+}
+.ligotypes-item:nth-child(4):hover {
+	content: url(../img/logo-4-4.jpg);
+}
+
+/*----------------------------logotypes----------------------------------*/
+
+/*----------------------------info----------------------------------*/
+
+.info-list {
+	list-style-type: circle;
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+}
+/*----------------------------info----------------------------------*/
+
+/*----------------------------contacts----------------------------------*/
+
+/*----------------------------contacts----------------------------------*/
+
+/*----------------------------main-footer----------------------------------*/
+.main-footer {
+	background: #464646;
+	color: #acacac;
+}
+.main-footer a {
+	color: #acacac;
+}
+.user-menu-footer, .site-navigation-footer, .social-list {
+	list-style-type: none;	
+}
+.user-menu-footer .user-menu-login::before {
+	content: url(../img/user-footer.svg);	
+}
+.user-menu-footer .user-menu-compare::before {
+	content: url(../img/user-footer.svg);	
+}
+.user-menu-footer .user-menu-cart::before {
+	content: url(../img/cart-footer.svg);	
+}
+.site-navigation-footer a {
+	color: #fff;
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.copyright {
+	background-image: url(../img/logo-html.svg);
+	background-repeat: no-repeat;
+	font-size: 0;
+}
+.social-item {
+	opacity: 0.3;
+}
+.social-item:hover {
+	opacity: 1;
+}
+.social-item:active {
+	opacity: 0.6;
+}
+.footer-title:hover, 
+.copyright:hover, 
+.user-menu-footer .user-menu-login:hover, 
+.user-menu-footer .user-menu-compare:hover, 
+.user-menu-footer .user-menu-cart:hover,
+.site-navigation-footer a:hover {
+	opacity: 0.6;
+}
+.footer-title:active, 
+.copyright:active, 
+.user-menu-footer .user-menu-login:active, 
+.user-menu-footer .user-menu-compare:active, 
+.user-menu-footer .user-menu-cart:active,
+.site-navigation-footer a:active
+ {
+	opacity: 0.3;
+}
+
+
+
+/*----------------------------main-footer----------------------------------*/
+
+/*----------------------------modal modal-feedback----------------------------------*/
+
+/*----------------------------modal modal-feedback----------------------------------*/
+
+/*----------------------------modal modal-map----------------------------------*/
+
+/*----------------------------modal modal-map----------------------------------*/
+
+/*----------------------------catalog.html----------------------------------*/
+.skick {
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+.breadcrumbs, .filter-color, .filter-radio {
+	list-style-type: none;
+}
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 24px;
+	opacity: 0.3;
+}
+.breadcrumbs a {
+	color: #000;
+}
+.breadcrumbs li:nth-child(1)::after, .breadcrumbs li:nth-child(2)::after {
+	content: url(../img/nav-arrow.svg);
+}
+.breadcrumbs li:nth-child(1):hover, .breadcrumbs li:nth-child(2):hover {
+	opacity: 0.6;
+}
+.breadcrumbs li:nth-child(1):active, .breadcrumbs li:nth-child(2):active {
+	opacity: 0.1;
+}
+/*----------------------------filters----------------------------------*/
+.filters-title, legend {
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+.filters-title {
+	letter-spacing: 3.75px;
+	text-transform: uppercase;
+}
+.filter-option {
+font-size: 14px;
+line-height: 40px;
+}
+.filters, .catalog-sort {
+	background: #eeeeee;
+}
+/*----------------------------filters----------------------------------*/
+
+/*----------------------------catalog-sort----------------------------------*/
+.catalog-sort-list {
+	list-style-type: none;
+}
+.catalog-sort-item a {
+	color: #000;
+}
+.catalog-sort-list {
+	opacity: 0.3;
+}
+.catalog-sort-item:hover {
+	opacity: 0.6;
+}
+.catalog-sort-item:active {
+	opacity: 1;
+}
+/*----------------------------catalog-sort----------------------------------*/
+
+/*----------------------------catalog----------------------------------*/
+.catalog-list, .pagination-list {
+	list-style-type: none;
+
+}
+.catalog-item a {
+	color: #000;
+}
+.catalog-item h3 {
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	font-size: 18px;
+}
+.catalog-item-text {
+	font-size: 16px;
+}
+.pagination-prev, .pagination-list {
+	font-family: "Gilroyextrabold", Arial, sans-serif;
+	font-size: 16px;
+}
+.pagination-item a {
+	opacity: 0.3;
+}
+.pagination-item a:hover {
+	opacity: 0.6;
+}
+.pagination-item a:active {
+	opacity: 1;
+}
+.pagination-item a, .pagination-next a {
+	color: #000;
+}
+.pagination-list {
+	background-color: #ebebeb;
+}
+.pagination-list li {
+	margin-right: 40px;
+	padding: 20px;
+}
+.pagination-prev:hover, .pagination-next:hover {
+	background-color: #d9d9d9;
+}
+.pagination-prev:active, .pagination-next:active {
+	opacity: 0.3;
+}
+/*----------------------------catalog----------------------------------*/
+
+
+
+/*----------------------------catalog.html----------------------------------*/
+
