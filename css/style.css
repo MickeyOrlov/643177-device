@@ -2100,3 +2100,28 @@ input[type="radio"]:focus + label::before {
 .catalogue-paginator a:active {
 	outline: none;
 }
+.modal-show {
+	display: block;
+	animation: appearance 0.7s;
+}
+
+@keyframes appearance {
+  0% {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  85% {
+    transform: translate(-50%, -47%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
